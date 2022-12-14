@@ -1,0 +1,265 @@
+﻿@model IEnumerable<CHILDCARE.Models.rpt_ccs_provider>
+
+@{
+    ViewData["Title"] = "rpt_ccs_provider";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CCS_PROVIDER</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.vendor_code_addr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vendor_code)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.address_code)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vendor_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.physical_addr_line_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.physical_addr_line_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.physical_city_state_zip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.physical_city)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.physical_state)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.physical_zip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.provider_email_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.provider_phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.provider_fax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.provider_email_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.remit_addr_line_1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.remit_addr_line_2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.remit_city)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.remit_state)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.remit_zip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.remit_address_combined)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.physical_address_combined)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.provider_program)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.provider_license)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prov_lic_recd_date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prov_lic_exp_date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prov_lic_req_date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.provider_accreditation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prov_accred_recd_date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prov_accred_exp_date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prov_accred_req_date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.provider_inspection)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prov_inspect_recd_date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prov_inspect_exp_date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prov_inspect_req_date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prov_staff_background_check)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.provider_status_peg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.provider_status_ccs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.notes)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.vendor_code_addr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vendor_code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.address_code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vendor_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.physical_addr_line_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.physical_addr_line_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.physical_city_state_zip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.physical_city)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.physical_state)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.physical_zip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.provider_email_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.provider_phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.provider_fax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.provider_email_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.remit_addr_line_1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.remit_addr_line_2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.remit_city)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.remit_state)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.remit_zip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.remit_address_combined)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.physical_address_combined)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.provider_program)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.provider_license)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prov_lic_recd_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prov_lic_exp_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prov_lic_req_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.provider_accreditation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prov_accred_recd_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prov_accred_exp_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prov_accred_req_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.provider_inspection)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prov_inspect_recd_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prov_inspect_exp_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prov_inspect_req_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prov_staff_background_check)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.provider_status_peg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.provider_status_ccs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.notes)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.vendor_code_addr">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.vendor_code_addr">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.vendor_code_addr">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

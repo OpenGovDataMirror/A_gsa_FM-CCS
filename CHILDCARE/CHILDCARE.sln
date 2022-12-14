@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHILDCARE", "CHILDCARE\CHILDCARE.csproj", "{C3958A99-2696-499C-87B2-0BBE7D03B614}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3958A99-2696-499C-87B2-0BBE7D03B614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3958A99-2696-499C-87B2-0BBE7D03B614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3958A99-2696-499C-87B2-0BBE7D03B614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3958A99-2696-499C-87B2-0BBE7D03B614}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24F0A134-F4BB-4171-9F8A-B3C1FC88B71F}
+	EndGlobalSection
+EndGlobal

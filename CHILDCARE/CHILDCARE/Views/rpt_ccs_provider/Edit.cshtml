@@ -1,0 +1,220 @@
+﻿@model CHILDCARE.Models.rpt_ccs_provider
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+<h4>rpt_ccs_provider</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="vendor_code_addr" />
+            <div class="form-group">
+                <label asp-for="vendor_code" class="control-label"></label>
+                <input asp-for="vendor_code" class="form-control" />
+                <span asp-validation-for="vendor_code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="address_code" class="control-label"></label>
+                <input asp-for="address_code" class="form-control" />
+                <span asp-validation-for="address_code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="vendor_name" class="control-label"></label>
+                <input asp-for="vendor_name" class="form-control" />
+                <span asp-validation-for="vendor_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tin" class="control-label"></label>
+                <input asp-for="tin" class="form-control" />
+                <span asp-validation-for="tin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="physical_addr_line_1" class="control-label"></label>
+                <input asp-for="physical_addr_line_1" class="form-control" />
+                <span asp-validation-for="physical_addr_line_1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="physical_addr_line_2" class="control-label"></label>
+                <input asp-for="physical_addr_line_2" class="form-control" />
+                <span asp-validation-for="physical_addr_line_2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="physical_city_state_zip" class="control-label"></label>
+                <input asp-for="physical_city_state_zip" class="form-control" />
+                <span asp-validation-for="physical_city_state_zip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="physical_city" class="control-label"></label>
+                <input asp-for="physical_city" class="form-control" />
+                <span asp-validation-for="physical_city" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="physical_state" class="control-label"></label>
+                <input asp-for="physical_state" class="form-control" />
+                <span asp-validation-for="physical_state" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="physical_zip" class="control-label"></label>
+                <input asp-for="physical_zip" class="form-control" />
+                <span asp-validation-for="physical_zip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="provider_email_1" class="control-label"></label>
+                <input asp-for="provider_email_1" class="form-control" />
+                <span asp-validation-for="provider_email_1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="provider_phone" class="control-label"></label>
+                <input asp-for="provider_phone" class="form-control" />
+                <span asp-validation-for="provider_phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="provider_fax" class="control-label"></label>
+                <input asp-for="provider_fax" class="form-control" />
+                <span asp-validation-for="provider_fax" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="provider_email_2" class="control-label"></label>
+                <input asp-for="provider_email_2" class="form-control" />
+                <span asp-validation-for="provider_email_2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="remit_addr_line_1" class="control-label"></label>
+                <input asp-for="remit_addr_line_1" class="form-control" />
+                <span asp-validation-for="remit_addr_line_1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="remit_addr_line_2" class="control-label"></label>
+                <input asp-for="remit_addr_line_2" class="form-control" />
+                <span asp-validation-for="remit_addr_line_2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="remit_city" class="control-label"></label>
+                <input asp-for="remit_city" class="form-control" />
+                <span asp-validation-for="remit_city" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="remit_state" class="control-label"></label>
+                <input asp-for="remit_state" class="form-control" />
+                <span asp-validation-for="remit_state" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="remit_zip" class="control-label"></label>
+                <input asp-for="remit_zip" class="form-control" />
+                <span asp-validation-for="remit_zip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="remit_address_combined" class="control-label"></label>
+                <input asp-for="remit_address_combined" class="form-control" />
+                <span asp-validation-for="remit_address_combined" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="physical_address_combined" class="control-label"></label>
+                <input asp-for="physical_address_combined" class="form-control" />
+                <span asp-validation-for="physical_address_combined" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="provider_program" class="control-label"></label>
+                <input asp-for="provider_program" class="form-control" />
+                <span asp-validation-for="provider_program" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="provider_license" class="control-label"></label>
+                <input asp-for="provider_license" class="form-control" />
+                <span asp-validation-for="provider_license" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prov_lic_recd_date" class="control-label"></label>
+                <input asp-for="prov_lic_recd_date" class="form-control" />
+                <span asp-validation-for="prov_lic_recd_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prov_lic_exp_date" class="control-label"></label>
+                <input asp-for="prov_lic_exp_date" class="form-control" />
+                <span asp-validation-for="prov_lic_exp_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prov_lic_req_date" class="control-label"></label>
+                <input asp-for="prov_lic_req_date" class="form-control" />
+                <span asp-validation-for="prov_lic_req_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="provider_accreditation" class="control-label"></label>
+                <input asp-for="provider_accreditation" class="form-control" />
+                <span asp-validation-for="provider_accreditation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prov_accred_recd_date" class="control-label"></label>
+                <input asp-for="prov_accred_recd_date" class="form-control" />
+                <span asp-validation-for="prov_accred_recd_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prov_accred_exp_date" class="control-label"></label>
+                <input asp-for="prov_accred_exp_date" class="form-control" />
+                <span asp-validation-for="prov_accred_exp_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prov_accred_req_date" class="control-label"></label>
+                <input asp-for="prov_accred_req_date" class="form-control" />
+                <span asp-validation-for="prov_accred_req_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="provider_inspection" class="control-label"></label>
+                <input asp-for="provider_inspection" class="form-control" />
+                <span asp-validation-for="provider_inspection" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prov_inspect_recd_date" class="control-label"></label>
+                <input asp-for="prov_inspect_recd_date" class="form-control" />
+                <span asp-validation-for="prov_inspect_recd_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prov_inspect_exp_date" class="control-label"></label>
+                <input asp-for="prov_inspect_exp_date" class="form-control" />
+                <span asp-validation-for="prov_inspect_exp_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prov_inspect_req_date" class="control-label"></label>
+                <input asp-for="prov_inspect_req_date" class="form-control" />
+                <span asp-validation-for="prov_inspect_req_date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prov_staff_background_check" class="control-label"></label>
+                <input asp-for="prov_staff_background_check" class="form-control" />
+                <span asp-validation-for="prov_staff_background_check" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="provider_status_peg" class="control-label"></label>
+                <input asp-for="provider_status_peg" class="form-control" />
+                <span asp-validation-for="provider_status_peg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="provider_status_ccs" class="control-label"></label>
+                <input asp-for="provider_status_ccs" class="form-control" />
+                <span asp-validation-for="provider_status_ccs" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="notes" class="control-label"></label>
+                <input asp-for="notes" class="form-control" />
+                <span asp-validation-for="notes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
